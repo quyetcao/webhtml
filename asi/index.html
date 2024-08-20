@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/asignment/css/all.min.css">
+    <link rel="stylesheet" href="../asi/article.css">
+    <link rel="stylesheet" href="../asi/header.css">
+    <link rel="stylesheet" href="../asi/footer.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        padding: 0 !important;
+        margin: 0;
+    }
+
+    .containerxl {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+    }
+</style>
+
+<body>
+    <div class="containerxl">
+        <div class="menu-responsive" id="menu-responsive">
+            <div class="menu-an-1">
+                <ul>
+                    <li><i class="fa-regular fa-x" id="ff"></i></li>
+                    <li><a href="../asi/index.html">Trang chủ</a></li>
+                    <li><a href="../asi/vechungtoi.html">Về chúng tôi</a></li>
+                    <li><a href="../asi/phong.html">Phòng<i class="fa-solid fa-chevron-down"
+                                style="color: #000000;"></i></a></li>
+                    <li><a href="../asi/AMTHUC.HTML">Ẩm thực<i class="fa-solid fa-chevron-down"
+                                style="color: #000000;"></i></a></li>
+                    <li><a href="../asi/DICHVU.HTML">Dịch vụ</a></li>
+                    <li><a href="../asi/thuvienanh.html">Thư viện ảnh</a></li>
+                    <li><a href="../asi/lienhe.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <header>
+            <script>
+                window.onload = function () {
+                    var header = document.getElementById('menu-responsive');
+                    console.log(header);
+                    var hamburger = document.getElementById('hamburger');
+                    var remo = document.getElementById('ff');
+
+                    remo.onclick = function () {
+                        var remove1 = remo.clientHeight != 0;
+                        if (remove1) {
+                            header.style.display = 'none';
+                        }
+                    }
+                    hamburger.onclick = function () {
+                        // console.log(header.clientHeight);
+                        var isClose = header.clientHeight === 0;
+                        if (isClose) {
+                            header.style.display = 'block';
+                        }
+                        else {
+                            header.style.display = 'none';
+                        }
+                    }
+                }
+
+            </script>
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="row-right">
+                            <p>Chào mừng bạn đến với Bean Hotel!</p>
+                        </div>
+                        <div class="row-left">
+                            <ul>
+                                <li class="ul1"><a href="../asi/dangky.html">Đăng Ký</a></li>
+                                <li class="ul2"><span style="color:#f5f5f5;font-weight: bold;">&nbsp|&nbsp</span></li>
+                                <li class="ul3"><a href="../asi/dangnhap.html">Đăng Nhập</a></li>
+                                <li class="ul4"><span style="color:#f5f5f5;font-weight: bold;">&nbsp|&nbsp</span></li>
+                                <li class="ul5"><span>&nbsp</span></li>
+                                <li class="ul6"><span>&nbsp</span></li>
+                                <li class="ul7"><a href="#"><i class="fa-solid fa-cart-shopping fa-fm"
+                                            style="color: #f5f5f5; padding:5px;"></i>Giỏ hàng (0)</a></li>
+                                <li class="ul8"><span style="color:#f5f5f5;font-weight: bold;">&nbsp|&nbsp</span></li>
+                                <li class="ul9"><a href="#"><i class="fa-solid fa-magnifying-glass fa-fm"
+                                            style="color: #fcfcfc; padding:5px;"></i>Tìm Kiếm </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-header">
+                <img src="../img/logo (1).png" alt="Logo" />
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="../asi/vechungtoi.html">Về chúng tôi</a></li>
+                        <li><a href="../asi/phong.html">Phòng<i class="fa-solid fa-chevron-down"
+                                    style="color: #000000;"></i></a></li>
+                        <li><a href="../asi/AMTHUC.HTML">Ẩm thực<i class="fa-solid fa-chevron-down"
+                                    style="color: #000000;"></i></a></li>
+                        <li><a href="../asi/DICHVU.HTML">Dịch vụ</a></li>
+                        <li><a href="../asi/thuvienanh.html">Thư viện ảnh</a></li>
+                        <li><a href="../asi/lienhe.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="menu-an">
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-2xl" style="color:#1a1a1a;"></i></a>
+                    <div id="hamburger"> <i class="fa-solid fa-bars fa-2xl" style="color:#212020;"></i></div>
+                </div>
+        </header>
+        <article>
+            <div class="banner">
+                <img src="../img/slider_1.jpg" alt="">
+            </div>
+            <div class="introduce">
+                <div class="container">
+                    <div class="row">
+                        <section class="introduce-1">
+                            <img src="../img/about.jpg" alt="ảnh">
+                        </section>
+                        <section class="introduce-2">
+                            <div class="introduce-text">
+                                <h1 class="itd-text1">Bean Hotel</h1>
+                                <p class="itd-text2">Giới thiệu về chúng tôi</p>
+                            </div>
+                            <div class="introduce-content">
+                                <p> Là khách sạn 5 sao đẳng cấp quốc tế, tọa lạc tại giao điểm của bốn quận chính, nơi
+                                    được xem
+                                    như
+                                    trái tim và trung tâm của TP. Hồ Chí Minh.
+                                    Với hệ thống phòng tiêu chuẩn và phòng hạng sang thiết kế đẹp mắt và trang nhã được
+                                    chú
+                                    trọng
+                                    tới
+                                    từng chi tiết sẽ đem lại sự tiện nghi và thoải mái tối đa cho quý khách dù là thời
+                                    gian nghỉ
+                                    ngơi thư giãn hay trong chuyến công tác...</p>
+                                <div class="btn-introduce"><a href="#">Xem Thêm</a></div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!-- phòng đơn -->
+            <h2 class="title-room">PHÒNG</h2>
+            <div class="section-room">
+                <div class="container">
+                    <div class="container-room ">
+                        <div class="hi">
+                            <img src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/anh1.jpg?v=1670338577307"
+                                alt="">
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐƠN TIÊU CHUẨN </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>02 khách</li>
+                                    <li>20m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom 2">
+                            <h5>500.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room">
+                        <div class="title-img">
+                            <div class="hi">
+                                <img src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/sp21.jpg?v=1670338576510"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐƠN VIEW THÀNH PHỐ </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>02 khách</li>
+                                    <li>25m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>700.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room ">
+                        <div class="title-img">
+                            <div class="hi">
+                                <img src="//bizweb.dktcdn.net/thumb/large/100/472/947/products/anh11a713f0cbaa54ea595b6bb5e1b.jpg?v=1670338575473"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐƠN VIEW SÂN VƯỜN </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>02 khách</li>
+                                    <li>25m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>800.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room ">
+                        <div class="title-img">
+                            <div class="hi">
+                                <img src="//bizweb.dktcdn.net/thumb/large/100/472/947/products/anh1eb6eb86adb63474a819ab595ee.jpg?v=1670338574237"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐƠN VIEW BIỂN </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>02 khách</li>
+                                    <li>25m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>900.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Hết  phòng đơn -->
+            <!-- Phòng đôi -->
+            <h2 class="title-room2">PHÒNG ĐÔI</h2>
+            <div class="section-room2">
+                <div class="container">
+                    <div class="container-room">
+                        <div class="hi">
+                            <img src="../img/anh12082233010354fb2894f5b1193.jpg" alt="">
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐÔI TIÊU CHUẨN </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="../img/tag_icon_3.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>02 khách</li>
+                                    <li>20m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>950.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room">
+                        <div class="title-img">
+                            <div class="hi">
+                                <img src="../img/anh11ccbd4ad859c41ff9fda9cdd73.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐÔI VIEW THÀNH PHỐ </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="../img/tag_icon_3.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>02 khách</li>
+                                    <li>20m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>1.100.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room">
+                        <div class="title-img">
+                            <div class="hi">
+                                <img src="../img/anh1120e24401b1a4fb7b5535ae97a.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐÔI VIEW SÂN VƯỜN </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="../img/tag_icon_3.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>02 khách</li>
+                                    <li>30m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>1.200.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room">
+                        <div class="title-img">
+                            <div class="hi">
+                                <img src="../img/anh11ccbd4ad859c41ff9fda9cdd73.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐÔI 2 GIƯỜNG ĐÔI </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="../img/tag_icon_3.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>04 khách</li>
+                                    <li>32m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>1.500.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--hết Phòng đôi -->
+            <h2 class="title-room3">PHÒNG VIP</h2>
+            <div class="section-vip">
+                <div class="row">
+                    <div class="section-vip-right">
+                        <div class="container">
+                            <div class="anhvip">
+                                <a href="#" class="img-href">
+                                    <div class="hi-vip">
+                                        <img src="../img/anh1a6283d038ec94b4abbca2d4e02.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="info-vip">
+                                <h3><a href="#">PHÒNG ĐƠN VIP</a></h3>
+                                <div class="info-room">
+                                    <div class="tag-review-small1">
+                                        <div class="tag-review1">
+                                            <img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag-user.svg?1676011628150"
+                                                title="02 Khách">
+                                            <p>02 Khách</p>&nbsp&nbsp&nbsp
+                                        </div>
+                                        <div class="tag-review1">
+                                            <img width="512" height="512"
+                                                src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag-meters.svg?1676011628150"
+                                                title="35m²">
+                                            <p>35m²</p>
+                                        </div>
+                                    </div>
+                                    <div class="tag-room">
+                                        <ul class="list-tag-room">
+                                            <li>
+                                                <img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                                    alt="Cafe Buổi Sáng">
+                                            </li>
+                                            <li>
+                                                <img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_2.svg?1676011628150"
+                                                    alt="Gọi Đồ Ăn Tại Phòng">
+                                            </li>
+
+                                            <li>
+                                                <img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_3.svg?1676011628150"
+                                                    alt="Bếp Nấu Tại Phòng">
+                                            </li>
+                                            <li>
+                                                <img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                                    alt="Bồn Tắm Hoa Sen">
+                                            </li>
+                                            <li>
+                                                <img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                                    alt="Internet Không Dây">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="info-text">
+                                    <p>
+                                        Với tiêu chí ngày càng nâng cao và đáp ứng mọi nhu cầu của khách hàng chúng tôi
+                                        cung cấp
+                                        thêm loại phòng đơ...
+                                    </p>
+                                </div>
+                                <div class="vip-book">
+                                    <a href="#">Đặt phòng từ 2.5000.000đ/đêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- phòng vip -->
+                    <section class="img">
+                        <div class="row-img">
+                            <div class="img1">
+                                <div class="hi">
+                                    <img src="../img/phonggiaddinh.webp" alt="">
+                                </div>
+                                <div class="price1">
+                                    <p>PHÒNG GIA ĐÌNH</p>
+                                    <div class="img1-price"><a href="#">3.000.000đ/đêm</a></div>
+                                </div>
+                            </div>
+                            <div class="img1">
+
+                                <a class="hi">
+                                    <img src="../img/phòng tp.webp" alt="">
+                                </a>
+                                <div class="price1">
+                                    <p>CĂN HỘ CHUNG CƯ</p>
+                                    <div class="img1-price"><a href="#">3.000.000đ/đêm</a></div>
+                                </div>
+                            </div>
+
+                            <div class="img1">
+
+                                <div class="hi">
+                                    <img src="../img/canhocaocap.webp" alt="">
+                                </div>
+                                <div class="price1">
+                                    <p>PHÒNG HẠNG SANG </p>
+                                    <div class="img1-price"><a href="#">3.000.000đ/đêm</a></div>
+                                </div>
+
+                            </div>
+                            <div class="img1">
+
+                                <div class="hi">
+                                    <img src="../img/phongdoicaocap.webp" alt="">
+                                </div>
+                                <div class="price1">
+                                    <p>PHÒNG ĐÔI NỐI LIỀN </p>
+                                    <div class="img1-price"><a href="#">3.000.000đ/đêm</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- Hết phòng vip -->
+
+            <!--Ẩm thực -->
+            <h2 class="title-eat4">ẨM THỰC</h2>
+            <section class="content-amthuc">
+                <div class="menu-am-thuc">
+                    <div class="mon-an">
+                        <span><a href="#">MÓN ĂN</a></span>
+                    </div>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp
+                    <div class="do-uong">
+                        <span><a href="#">ĐỒ UỐNG</a></span>
+                    </div>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp
+                    <div class="banh-ngot">
+                        <span><a href="#">BÁNH NGỌT</a></span>
+                    </div>
+                </div>
+                <div class="img-thuc-an">
+                    <div class="img-thuc-an1">
+                        <div class="hi-thuc-an">
+                            <div class="img-ta">
+                                <img src="../img/a3.jpg" alt="">
+                            </div>
+                            <div class="sale-label">
+                                <span class="smart"> -20% </span>
+                            </div>
+                            <div class="group_action">
+
+                                <input type="hidden" name="variantId" value="77487981">
+                                <button class="btn-anima" title="Mua ngay">
+                                    <img width="24" height="24" class="shopping"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/cart-add.svg?1685581511029"
+                                        alt="Mua ngay">
+                                </button>
+                                <a title="Xem nhanh" class="btn-anima hidden-xs">
+                                    <img width="24" height="24" class="btn-xtt"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/view.svg?1685581511029"
+                                        alt="Xem nhanh">
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="name-am-thuc">MÌ XÀO BÒ</p>
+                            <div class="price-at">
+                                <P class="price-am-thuc">80.000đ</P>
+                                <p class="price-am-thuc-goc">100.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-thuc-an1">
+                        <div class="hi-thuc-an">
+                            <div class="img-ta">
+                                <img src="../img/sp2.jpg" alt="">
+                            </div>
+                            <div class="sale-label">
+                                <span class="smart">- 20% </span>
+                            </div>
+                            <div class="group_action">
+
+                                <input type="hidden" name="variantId" value="77487981">
+                                <button class="btn-anima" title="Mua ngay">
+                                    <img width="24" height="24" class="shopping1"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/cart-add.svg?1685581511029"
+                                        alt="Mua ngay">
+                                </button>
+                                <a title="Xem nhanh" class="btn-anima hidden-xs">
+                                    <img width="24" height="24" class="btn-xt"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/view.svg?1685581511029"
+                                        alt="Xem nhanh">
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="name-am-thuc">BÚN XÀO THỊT HEO</p>
+                            <div class="price-at">
+                                <P class="price-am-thuc">75.000đ</P>
+                                <p class="price-am-thuc-goc">90.000đ</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="img-thuc-an1">
+                        <div class="hi-thuc-an">
+                            <div class="img-ta">
+                                <img src="../img/a7.jpg" alt="">
+                            </div>
+                            <div class="sale-label">
+                                <span class="smart">- 20% </span>
+                            </div>
+                            <div class="group_action">
+
+                                <input type="hidden" name="variantId" value="77487981">
+                                <button class="btn-anima" title="Mua ngay">
+                                    <img width="24" height="24" class="shopping2"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/cart-add.svg?1685581511029"
+                                        alt="Mua ngay">
+                                </button>
+                                <a title="Xem nhanh" class="btn-anima hidden-xs">
+                                    <img width="24" height="24" id="btn-xt" class="btn-xt2"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/view.svg?1685581511029"
+                                        alt="Xem nhanh">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="name-am-thuc">BÚN BÒ HUẾ</p>
+                            <div class="price-at">
+                                <P class="price-am-thuc">95.000đ</P>
+                                <p class="price-am-thuc-goc">100.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-thuc-an1">
+                        <div class="hi-thuc-an">
+                            <div class="img-ta">
+                                <img src="../img/a2.jpg" alt="">
+                            </div>
+                            <div class="sale-label">
+                                <span class="smart">- 20% </span>
+                            </div>
+                            <div class="group_action">
+                                <input type="hidden" name="variantId" value="77487981">
+                                <button class="btn-anima" title="Mua ngay">
+                                    <img width="24" height="24" class="shopping3"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/cart-add.svg?1685581511029"
+                                        alt="Mua ngay">
+                                </button>
+                                <a title="Xem nhanh" class="btn-anima hidden-xs">
+                                    <img width="24" height="24" id="btn-xt" class="btn-xt3"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/view.svg?1685581511029"
+                                        alt="Xem nhanh">
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="name-am-thuc"> MÌ XÀO THỊT HEO</p>
+                            <div class="price-at">
+                                <P class="price-am-thuc">85.000đ</P>
+                                <p class="price-am-thuc-goc">97.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-thuc-an1">
+                        <div class="hi-thuc-an">
+                            <div class="img-ta">
+                                <img src="../img/a1.jpg" alt="">
+                            </div>
+                            <div class="sale-label">
+                                <span class="smart">- 20% </span>
+                            </div>
+                            <div class="group_action">
+                                <input type="hidden" name="variantId" value="77487981">
+                                <button class="btn-anima" title="Mua ngay">
+                                    <img width="24" height="24" class="shopping4"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/cart-add.svg?1685581511029"
+                                        alt="Mua ngay">
+                                </button>
+                                <a title="Xem nhanh" class="btn-anima hidden-xs">
+                                    <img width="24" height="24" id="btn-xt" class="btn-xt4"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/view.svg?1685581511029"
+                                        alt="Xem nhanh">
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="name-am-thuc">BÁNH MÌ ỐP LA TRỨNG </p>
+                            <div class="price-at">
+                                <P class="price-am-thuc">40.000đ</P>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="img-thuc-an1">
+                        <div class="hi-thuc-an">
+                            <div class="img-ta">
+                                <img src="../img/a5.jpg" alt="">
+                            </div>
+                            <div class="sale-label">
+                                <span class="smart">- 20% </span>
+                            </div>
+                            <div class="group_action">
+                                <input type="hidden" name="variantId" value="77487981">
+                                <button class="btn-anima" title="Mua ngay">
+                                    <img width="24" height="24" class="shopping5"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/cart-add.svg?1685581511029"
+                                        alt="Mua ngay">
+                                </button>
+                                <a title="Xem nhanh" class="btn-anima hidden-xs">
+                                    <img width="24" height="24" id="btn-xt" class="btn-xt5"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/view.svg?1685581511029"
+                                        alt="Xem nhanh">
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="name-am-thuc">BÁNH MÌ BÒ KHO</p>
+                            <div class="price-at">
+                                <P class="price-am-thuc">70.000đ</P>
+                                <p class="price-am-thuc-goc">90.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-thuc-an1">
+                        <div class="hi-thuc-an">
+                            <div class="img-ta">
+                                <img src="../img/a4.jpg" alt="">
+                            </div>
+                            <div class="sale-label">
+                                <span class="smart">- 20% </span>
+                            </div>
+                            <div class="group_action">
+                                <input type="hidden" name="variantId" value="77487981">
+                                <button class="btn-anima" title="Mua ngay">
+                                    <img width="24" height="24" class="shopping6"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/cart-add.svg?1685581511029"
+                                        alt="Mua ngay">
+                                </button>
+                                <a title="Xem nhanh" class="btn-anima hidden-xs">
+                                    <img width="24" height="24" id="btn-xt" class="btn-xt6"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/view.svg?1685581511029"
+                                        alt="Xem nhanh">
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="name-am-thuc">BÚN BÒ-HEO</p>
+                            <div class="price-at">
+                                <P class="price-am-thuc">80.000đ</P>
+                                <p class="price-am-thuc-goc">90.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="img-thuc-an1">
+                        <div class="hi-thuc-an">
+                            <div class="img-ta">
+                                <img src="../img/a6.jpg" alt="">
+                            </div>
+                            <div class="sale-label">
+                                <span class="smart">- 20% </span>
+                            </div>
+                            <div class="group_action">
+                                <input type="hidden" name="variantId" value="77487981">
+                                <button class="btn-anima" title="Mua ngay">
+                                    <img width="24" height="24" class="shopping7"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/cart-add.svg?1685581511029"
+                                        alt="Mua ngay">
+                                </button>
+                                <a title="Xem nhanh" class="btn-anima hidden-xs">
+                                    <img width="24" height="24" class="btn-xt7"
+                                        src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/view.svg?1685581511029"
+                                        alt="Xem nhanh">
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p class="name-am-thuc">CƠM SƯỜN TRỨNG</p>
+                            <div class="price-at">
+                                <P class="price-am-thuc">50.000đ</P>
+                                <p class="price-am-thuc-goc">60.000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="eat-them">
+                <div class="product-xem-them"><a href="#">XEM THÊM</a></div>
+            </div>
+            <!--tiện nghi - ks - lam đẹp-->
+            <div class="section-tab-restaurent">
+                <div class="tab-restaurent-top">
+                    <ul class="tab-restaurent-ul">
+                        <li>
+                            <div class="item-name">
+                                <img src="../img/cutlery.png" alt="">
+                                <p>KHÁCH SẠN</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-name">
+                                <img src="../img/meeting.png" alt="">
+                                <p>PHÒNG HỌP</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-name">
+                                <img src="../img/skin-care.png" alt="">
+                                <p>LÀM ĐẸP</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-restaurent-bottom">
+                    <div class="container">
+                        <div class="column3">
+                            <div class="tab">
+                                <div class="title-us">
+                                    <p class="text1">tiện nghi</p>
+                                    <p class="text2">sang trọng</p>
+                                </div>
+                                <div class="img-us">
+                                    <img src="../img/banner1_tab1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <div class="title-cont-us">
+                                    <p class="txt-title">KHÁCH SẠN </p>
+                                    <p class="txt-title-1">Chúng tôi mang lại không gian thư giản và tiện nghi đáp ứng
+                                        mọi nhu
+                                        cầu cho bạn.</p>
+                                    <p class="txt-title-2">Là khách sạn 5 sao đẳng cấp quốc tế, tọa lạc tại giao điểm
+                                        của bốn
+                                        quận chính, nơi được xem như trái tim
+                                        và trung tâm của TP. Hồ Chí Minh. Với hệ thống phòng tiêu chuẩn và phòng hạng
+                                        sang thiết
+                                        kế đẹp mắt và trang nhã được chú trọng tới
+                                        từng chi tiết sẽ đem lại sự tiện nghi và thoải mái tối đa cho quý khách dù là
+                                        thời gian
+                                        nghỉ ngơi thư giãn hay trong chuyến công tác...</p>
+                                </div>
+                            </div>
+                            <div class="tab">
+                                <div class="img-tab3">
+                                    <img src="../img/banner2_tab1.jpg" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title-hieu-biet">HIỂU BIẾT KHÁCH SẠN </h2>
+            <section class="section-blogs">
+                <div class="item-blog1">
+                    <div class="item-blog-10">
+                        <div class="img-blog">
+                            <img src="../img/10-xu-huong-thinh-hanh-trong-nganh-khach-san-2021.jpg" alt="">
+                        </div>
+                        <div class="content-blog">
+                            <h3><a href="#">10 xu hướng thịnh hành trong ngành khách sạn...</a></h3>
+                            <p class="text-blog">Không gian ngoài trời mở rộng hơn, nâng cấp công nghệ để hạn chế tối đa
+                                tiếp xúc là những xu hướng mới nhiều khách...</p>
+                            <div class="blog-btn">
+                                <p class="update">By Bean Hotel</p>
+                                <span class="user-date">06/12/2022</span>
+                            </div>
+                            <div class="blog-xemthem"><a href="#">ĐỌC THÊM</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-blog1">
+                    <div class="item-blog-10">
+                        <div class="img-blog">
+                            <img src="../img/nhung-dieu-kieng-ky-khi-o-khach-san-ma-ban-can-biet.jpg" alt="">
+                        </div>
+                        <div class="content-blog">
+                            <h3><a href="#">Những điều kiêng kị khi ở khách sạn mà bạn nên biết</a></h3>
+                            <p class="text-blog">Để không gặp nhiều phiền toái và giữ an toàn cho chính bản thân trong
+                                mỗi chuyến đi, bạn nên cẩn thận tìm hiểu một...</p>
+                            <div class="blog-btn">
+                                <p class="update">By Bean Hotel</p>
+                                <span class="user-date">06/12/2022</span>
+                            </div>
+                            <div class="blog-xemthem"><a href="#">ĐỌC THÊM</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-blog1">
+                    <div class="item-blog-10">
+                        <div class="img-blog">
+                            <img src="../img/y-nghia-viec-khach-san-de-chocolate-len-goi-khi-don-phong.jpg" alt="">
+                        </div>
+                        <div class="content-blog">
+                            <h3><a href="#">Ý nghĩa việc khách sạn để chocolate lên gối khi dọn phòng</a></h3>
+                            <p class="text-blog">Các quản lý khách sạn phát hiện ra dịch vụ này nhận được nhiều lời khen
+                                từ khách thuê phòng hơn bất kỳ hoạt động...</p>
+                            <div class="blog-btn">
+                                <p class="update">By Bean Hotel</p>
+                                <span class="user-date">06/12/2022</span>
+                            </div>
+                            <div class="blog-xemthem"><a href="#">ĐỌC THÊM</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <footer>
+            <div class="footer-tab1">
+                <div class="tab1-sup">
+                    <h3>hotline hỗ trợ </h3>
+                    <p>1900 6750</p>
+                </div>
+                <div class="tab1-email-sup">
+                    <h3>email hỗ trợ</h3>
+                    <p>support@sapo.vn</p>
+                </div>
+                <div class="tab1-dk">
+                    <h3>đăng ký nhận tài khoản </h3>
+                    <input class="email" type="email" placeholder="Email của bạn">
+                    <div class="dangky"><a href="#">ĐĂNG KÝ </a></div>
+                </div>
+                <div class="tab1-connet">
+                    <h3>kết nối chúng tôi</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-tab2">
+                <img width="30" height="23" src="../img/icon-home (1).png" alt="">
+                <h3><a href="#">HỆ THỐNG CHI NHÁNH </a></h3>
+            </div>
+            <div class="footer-tab3">
+
+                <div class="table1">
+
+                    <div class="icon-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25">
+                            <g transform="translate(-377 -4240)">
+                                <path
+                                    d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z"
+                                    transform="translate(383 4244)" fill="#fff"></path>
+                                <g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1">
+                                    <circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle>
+                                    <circle cx="12.5" cy="12.5" r="12" fill="none"></circle>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="table-text">
+                        <p>Hotel HCM : 772 Điện Biên Phủ, Phường 1, Bình Thạnh</p>
+                        <p>Hotline: 0982.847.974</p>
+                    </div>
+                </div>
+                <div class="table2">
+
+                    <div class="icon-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25">
+                            <g transform="translate(-377 -4240)">
+                                <path
+                                    d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z"
+                                    transform="translate(383 4244)" fill="#fff"></path>
+                                <g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1">
+                                    <circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle>
+                                    <circle cx="12.5" cy="12.5" r="12" fill="none"></circle>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="table-text">
+                        <p>Hotel Đà Lạt : 94 Hoàng Hoa Thám, Phường 10 </p>
+                        <p>Hotline: 0263.306.997 </p>
+                    </div>
+                </div>
+
+                <div class="table3">
+                    <div class="icon-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25">
+                            <g transform="translate(-377 -4240)">
+                                <path
+                                    d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z"
+                                    transform="translate(383 4244)" fill="#fff"></path>
+                                <g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1">
+                                    <circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle>
+                                    <circle cx="12.5" cy="12.5" r="12" fill="none"></circle>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="table-text">
+                        <p>Hotel Nha Trang: 02 Phạm Văn Đồng, Phường Vĩnh Phước</p>
+                        <p>Hotline: 0903.307.497 </p>
+                    </div>
+                </div>
+
+
+                <div class="table4">
+                    <div class="icon-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25">
+                            <g transform="translate(-377 -4240)">
+                                <path
+                                    d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z"
+                                    transform="translate(383 4244)" fill="#fff"></path>
+                                <g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1">
+                                    <circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle>
+                                    <circle cx="12.5" cy="12.5" r="12" fill="none"></circle>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="table-text">
+                        <p>Hotel Phú Quốc : 147 Trần Hưng Đạo, Dương Đông</p>
+                        <p>Hotline: 0903.307.447 </p>
+                    </div>
+                </div>
+
+                <div class="table5">
+                    <div class="icon-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25">
+                            <g transform="translate(-377 -4240)">
+                                <path
+                                    d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z"
+                                    transform="translate(383 4244)" fill="#fff"></path>
+                                <g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1">
+                                    <circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle>
+                                    <circle cx="12.5" cy="12.5" r="12" fill="none"></circle>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="table-text">
+                        <p>Hotel Đăk Lăk : 38 Huỳnh Thúc Kháng, Phường Tân Lợi </p>
+                        <p>Hotline: 0903.307.448 </p>
+                    </div>
+                </div>
+
+                <div class="table6">
+                    <div class="icon-inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25">
+                            <g transform="translate(-377 -4240)">
+                                <path
+                                    d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z"
+                                    transform="translate(383 4244)" fill="#fff"></path>
+                                <g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1">
+                                    <circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle>
+                                    <circle cx="12.5" cy="12.5" r="12" fill="none"></circle>
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="table-text">
+                            <p>Hotel Hà Nội : 226 Đội Cẩn, Ba Đình </p>
+                            <p>Hotline: 0903.307.449 </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-tab4">
+                <div class="footer-tab4-1">
+                    <div class="logo-foo">
+                        <a href="#" class="logo-footer" title="Bean Hotel"><img width="220" height="68"
+                                src="../img/logo_foo.png" alt="Bean Hotel" class="lazyload loaded"
+                                data-was-processed="true"></a>
+                    </div>
+                    <div class="content-des">Nằm ở trung tâm thành phố và nhiều thành phố khác. Chúng tôi cung cấp chỗ
+                        nghỉ thanh lịch và đầy phong cách với truy cập Wifi miễn phí trong các khu vực chung. Khách sạn
+                        có lễ tân 24 giờ, hồ bơi trong nhà, trung tâm thể dục và bãi đỗ xe miễn phí trong khuôn viên.
+                    </div>
+                </div>
+                <div class="footer-tab4-2">
+                    <h4 class="title-menu clicked">
+                        Bài viết mới
+                    </h4>
+                    <ul class="list-menu toggle-mn hidden-mob">
+                        <li class="item_blog">
+                            <div class="post-info">
+                                <div class="enti-title">
+                                    <a href="#" title="10 xu hướng thịnh hành trong ngành khách sạn 2022">10 xu hướng
+                                        thịnh hành trong ngành khách sạn 2022</a>
+                                </div>
+                                <p class="post-time">Ngày đăng 06/12/2022</p>
+                            </div>
+                        </li>
+                        <li class="item_blog">
+                            <div class="post-info">
+                                <div class="enti-title">
+                                    <a href="#" title="Những điều kiêng kị khi ở khách sạn mà bạn nên biết">Những điều
+                                        kiêng kị khi ở khách sạn mà bạn nên biết</a>
+                                </div>
+                                <p class="post-time">Ngày đăng 06/12/2022</p>
+                            </div>
+                        </li>
+                        <li class="item_blog">
+                            <div class="post-info">
+                                <div class="enti-title">
+                                    <a href="#" title="Ý nghĩa việc khách sạn để chocolate lên gối khi dọn phòng">Ý
+                                        nghĩa việc khách sạn để chocolate lên gối khi dọn phòng</a>
+                                </div>
+                                <p class="post-time">Ngày đăng 06/12/2022</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-tab4-3">
+                    <h4 class="title-menu clicked">
+                        Chính sách
+                    </h4>
+                    <ul class="list-menu toggle-mn hidden-mob">
+
+                        <li class="li_menu">
+                            <a href="#" title="Chính sách nhận phòng">Chính sách nhận phòng</a>
+                        </li>
+
+                        <li class="li_menu">
+                            <a href="#" title="Chính sách trả phòng">Chính sách trả phòng</a>
+                        </li>
+
+                        <li class="li_menu">
+                            <a href="#" title="Chính sách thanh toán">Chính sách thanh toán</a>
+                        </li>
+
+                        <li class="li_menu">
+                            <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer-tab4-4">
+                    <h4 class="title-menu">
+                        Hình thức thanh toán
+                    </h4>
+                    <div class="content-des"><img width="283" height="106" src="../img/icon_check_out (1).png"
+                            alt="Hình thức thanh toán"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!---thiết kế cho khung giỏ hàng -->
+    <div class="giohang" id="giohang">
+        <div class="container-giohang">
+            <div class="giohang-top">
+                <span>
+                    <i class="fa-regular fa-circle-check fa-xl"></i>
+                    Mua hàng thành công
+                </span>
+                <i class="fa-regular fa-x" id="xoa"></i>
+            </div>
+            <div class="giohang-article">
+                <div class="giohang-article-left">
+                    <img src="../img/s1.webp" alt="">
+                </div>
+                <div class="giohang-article-right">
+                    <h3>Mì xào bò</h3>
+                    <h4>75.000đ</h4>
+                </div>
+            </div>
+            <div class="giohang-btn">
+                <p>Giỏ hàng hiện có 5 sản phẩm </p>
+                <div class="giohang-btn-a">
+                    <div class="muahangbtn1">Tiếp tục mua hàng </div>
+                    <div class="muahangbtn2">Thanh toán ngay </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var shoppingOpen = document.querySelector('.shopping');
+        var giohang = document.getElementById('giohang');
+        var xoa = document.getElementById('xoa');
+        function hienthi() {
+            giohang.classList.toggle('giohang');
+        }
+        shoppingOpen.addEventListener('click', hienthi);
+        xoa.addEventListener('click', hienthi);
+
+
+
+        var shoppingOpen1 = document.querySelector('.shopping1');
+        var giohang = document.getElementById('giohang');
+        var xoa = document.getElementById('xoa');
+        function hienthi() {
+            giohang.classList.toggle('giohang');
+        }
+        shoppingOpen1.addEventListener('click', hienthi);
+        xoa.addEventListener('click', hienthi);
+
+
+        var shoppingOpen2 = document.querySelector('.shopping2');
+        var giohang = document.getElementById('giohang');
+        var xoa = document.getElementById('xoa');
+        function hienthi() {
+            giohang.classList.toggle('giohang');
+        }
+        shoppingOpen2.addEventListener('click', hienthi);
+        xoa.addEventListener('click', hienthi);
+
+
+        var shoppingOpen3 = document.querySelector('.shopping3');
+        var giohang = document.getElementById('giohang');
+        var xoa = document.getElementById('xoa');
+        function hienthi() {
+            giohang.classList.toggle('giohang');
+        }
+        shoppingOpen3.addEventListener('click', hienthi);
+        xoa.addEventListener('click', hienthi);
+
+
+        var shoppingOpen4 = document.querySelector('.shopping4');
+        var giohang = document.getElementById('giohang');
+        var xoa = document.getElementById('xoa');
+        function hienthi() {
+            giohang.classList.toggle('giohang');
+        }
+        shoppingOpen4.addEventListener('click', hienthi);
+        xoa.addEventListener('click', hienthi);
+
+
+        var shoppingOpen5 = document.querySelector('.shopping5');
+        var giohang = document.getElementById('giohang');
+        var xoa = document.getElementById('xoa');
+        function hienthi() {
+            giohang.classList.toggle('giohang');
+        }
+        shoppingOpen5.addEventListener('click', hienthi);
+        xoa.addEventListener('click', hienthi);
+
+
+        var shoppingOpen6 = document.querySelector('.shopping6');
+        var giohang = document.getElementById('giohang');
+        var xoa = document.getElementById('xoa');
+        function hienthi() {
+            giohang.classList.toggle('giohang');
+        }
+        shoppingOpen6.addEventListener('click', hienthi);
+        xoa.addEventListener('click', hienthi);
+
+
+        var shoppingOpen7 = document.querySelector('.shopping7');
+        var giohang = document.getElementById('giohang');
+        var xoa = document.getElementById('xoa');
+        function hienthi() {
+            giohang.classList.toggle('giohang');
+        }
+        shoppingOpen7.addEventListener('click', hienthi);
+        xoa.addEventListener('click', hienthi);
+    </script>
+
+    <!---thiết kế khung chi tiết sản phẩm -->
+    <div class="info-sp " id="hide">
+        <div class="row ">
+            <div class="container-sp">
+                <div class="sp-left">
+                    <div class="sp-left-top">
+                        <div class="sp-left-top-img">
+                            <a href="#"><img src="../img/s1 (1).webp" alt=""></a>
+                        </div>
+                        <div class="sp-left-bottom">
+                            <a href=""><img class="img1" src="../img/s1.webp" alt=""></a>
+                            <a href=""><img class="img1" src="../img/s2.webp" alt=""></a>
+                            <a href=""><img class="img1" src="../img/s3.webp" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sp-right">
+                    <i class="fa-regular fa-x" id="fff"></i>
+                    <h2>Bánh mì bò kho</h2>
+                    <p class="price">75.000đ</p>
+                    <p>Tô bánh mì bò kho ngon nóng hổi sẽ cung cấp bữa sáng tuyệt vời,
+                        đầy đủ dinh dưỡng, năng lượng cho một ngày dài. Sự hòa quyện vị
+                        ngọt tự nhiên của rau củ, thịt và gia vị sẽ giúp món mì thêm đậm đà, đượm vị.</p>
+                    <div class="btn-sp-right">
+                        <div class="soluong">
+                            <p class="so1">1</p>
+                            <div class="tanggiam">
+                                <p class="cong"><a>+</a></p>
+                                <p class="tru"><a>-</a></p>
+                            </div>
+                        </div>
+                        <div class="themvaogiohang">
+                            <p>THÊM VÀO GIỎ HÀNG </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info-spp " id="hidee">
+        <div class="row ">
+            <div class="container-sp">
+                <div class="sp-left">
+                    <div class="sp-left-top">
+                        <div class="sp-left-top-img">
+                            <a href="#"><img src="../img/sp3c (1).webp" alt=""></a>
+                        </div>
+                        <div class="sp-left-bottom">
+                            <a href=""><img class="img1" src="../img/sp1c.webp" alt=""></a>
+                            <a href=""><img class="img1" src="../img/sp2.webp" alt=""></a>
+                            <a href=""><img class="img1" src="../img/sp3c.webp" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sp-right">
+                    <i class="fa-regular fa-x" id="ffff"></i>
+                    <h2>Mì xào bò </h2>
+                    <p class="price">75.000đ</p>
+                    <p>Tô bánh mì bò kho ngon nóng hổi sẽ cung cấp bữa sáng tuyệt vời,
+                        đầy đủ dinh dưỡng, năng lượng cho một ngày dài. Sự hòa quyện vị
+                        ngọt tự nhiên của rau củ, thịt và gia vị sẽ giúp món mì thêm đậm đà, đượm vị.</p>
+                    <div class="btn-sp-right">
+                        <div class="soluong">
+                            <p class="so1">1</p>
+                            <div class="tanggiam">
+                                <p class="cong"><a>+</a></p>
+                                <p class="tru"><a>-</a></p>
+                            </div>
+                        </div>
+                        <div class="themvaogiohang">
+                            <p>THÊM VÀO GIỎ HÀNG </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var eye = document.querySelector('.btn-xt');
+        var chitiet = document.getElementById('hide');
+        var remove2 = document.getElementById('fff');
+        remove2.onclick = function () {
+            chitiet.style.display = 'none';
+        }
+        eye.onclick = function () {
+            var isClose3 = chitiet.clientHeight === 0;
+            if (isClose3) {
+                chitiet.style.display = 'block';
+            }
+            else {
+                chitiet.style.display = 'none';
+            }
+        }
+
+        var eyee = document.querySelector('.btn-xtt');
+        console.log(eyee);
+        var chitieto = document.getElementById('hidee');
+        var remove = document.getElementById('ffff');
+        remove.onclick = function () {
+            chitieto.style.display = 'none';
+        }
+        eyee.onclick = function () {
+            var isClosee = chitieto.clientHeight === 0;
+            if (isClosee) {
+                chitieto.style.display = 'block';
+            }
+            else {
+                chitieto.style.display = 'none';
+            }
+        }
+        var eye2 = document.querySelector('.btn-xt2');
+        eye2.onclick = function () {
+            var isClose3 = chitiet.clientHeight === 0;
+            if (isClose3) {
+                chitiet.style.display = 'block';
+            }
+            else {
+                chitiet.style.display = 'none';
+            }
+        }
+        var eye3 = document.querySelector('.btn-xt3');
+        eye3.onclick = function () {
+            var isClose = chitiet.clientHeight === 0;
+            if (isClose) {
+                chitiet.style.display = 'block';
+            }
+            else {
+                chitiet.style.display = 'none';
+            }
+        }
+        var eye4 = document.querySelector('.btn-xt4');
+        eye4.onclick = function () {
+            var isClose3 = chitiet.clientHeight === 0;
+            if (isClose3) {
+                chitiet.style.display = 'block';
+            }
+            else {
+                chitiet.style.display = 'none';
+            }
+        }
+        var eye5 = document.querySelector('.btn-xt5');
+        eye5.onclick = function () {
+            var isClose3 = chitiet.clientHeight === 0;
+            if (isClose3) {
+                chitiet.style.display = 'block';
+            }
+            else {
+                chitiet.style.display = 'none';
+            }
+        }
+        var eye6 = document.querySelector('.btn-xt6');
+        eye6.onclick = function () {
+            var isClose3 = chitiet.clientHeight === 0;
+            if (isClose3) {
+                chitiet.style.display = 'block';
+            }
+            else {
+                chitiet.style.display = 'none';
+            }
+        }
+        var eye7 = document.querySelector('.btn-xt7');
+        eye7.onclick = function () {
+            var isClose3 = chitiet.clientHeight === 0;
+            if (isClose3) {
+                chitiet.style.display = 'block';
+            }
+            else {
+                chitiet.style.display = 'none';
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

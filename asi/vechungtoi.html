@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu</title>
+    <link rel="stylesheet" href="../asi/vechungtoi.css">
+    <link rel="stylesheet" href="../asi/article.css">
+    <link rel="stylesheet" href="../asi/header.css">
+    <link rel="stylesheet" href="../asi/footer.css">
+</head>
+<body>
+    <div class="containerxl">
+        <div class="containerxl">
+            <div class="menu-responsive" id="menu-responsive">
+                <div class="menu-an-1">
+                    <ul>
+                        <li><i class="fa-regular fa-x" id="ff"></i></li>
+                        <li><a href="../asi/index.html">Trang chủ</a></li>
+                        <li><a href="../asi/vechungtoi.html">Về chúng tôi</a></li>
+                        <li><a href="../asi/phong.html">Phòng<i class="fa-solid fa-chevron-down"
+                                    style="color: #000000;"></i></a></li>
+                        <li><a href="../asi/AMTHUC.HTML">Ẩm thực<i class="fa-solid fa-chevron-down"
+                                    style="color: #000000;"></i></a></li>
+                        <li><a href="../asi/DICHVU.HTML">Dịch vụ</a></li>
+                        <li><a href="../asi/thuvienanh.html">Thư viện ảnh</a></li>
+                        <li><a href="../asi/lienhe.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <header>
+                <script>
+                    window.onload = function () {
+                        var header = document.getElementById('menu-responsive');
+                        console.log(header);
+                        var hamburger = document.getElementById('hamburger');
+                        var remo = document.getElementById('ff');
+    
+                        remo.onclick = function () {
+                            var remove1 = remo.clientHeight != 0;
+                            if (remove1) {
+                                header.style.display = 'none';
+                            }
+                        }
+                        hamburger.onclick = function () {
+                            // console.log(header.clientHeight);
+                            var isClose = header.clientHeight === 0;
+                            if (isClose) {
+                                header.style.display = 'block';
+                            }
+                            else {
+                                header.style.display = 'none';
+                            }
+                        }
+                    }
+    
+                </script>
+                <div class="top-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="row-right">
+                                <p>Chào mừng bạn đến với Bean Hotel!</p>
+                            </div>
+                            <div class="row-left">
+                                <ul>
+                                    <li class="ul1"><a href="../asi/dangky.html">Đăng Ký</a></li>
+                                    <li class="ul2"><span style="color:#f5f5f5;font-weight: bold;">&nbsp|&nbsp</span></li>
+                                    <li class="ul3"><a href="../asi/dangnhap.html">Đăng Nhập</a></li>
+                                    <li class="ul4"><span style="color:#f5f5f5;font-weight: bold;">&nbsp|&nbsp</span></li>
+                                    <li class="ul5"><span>&nbsp</span></li>
+                                    <li class="ul6"><span>&nbsp</span></li>
+                                    <li class="ul7"><a href="#"><i class="fa-solid fa-cart-shopping fa-fm"
+                                                style="color: #f5f5f5; padding:5px;"></i>Giỏ hàng (0)</a></li>
+                                    <li class="ul8"><span style="color:#f5f5f5;font-weight: bold;">&nbsp|&nbsp</span></li>
+                                    <li class="ul9"><a href="#"><i class="fa-solid fa-magnifying-glass fa-fm"
+                                                style="color: #fcfcfc; padding:5px;"></i>Tìm Kiếm </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-header">
+                    <img src="../img/logo (1).png" alt="Logo" />
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="../asi/vechungtoi.html">Về chúng tôi</a></li>
+                            <li><a href="../asi/phong.html">Phòng<i class="fa-solid fa-chevron-down"
+                                        style="color: #000000;"></i></a></li>
+                            <li><a href="../asi/AMTHUC.HTML">Ẩm thực<i class="fa-solid fa-chevron-down"
+                                        style="color: #000000;"></i></a></li>
+                            <li><a href="../asi/DICHVU.HTML">Dịch vụ</a></li>
+                            <li><a href="../asi/thuvienanh.html">Thư viện ảnh</a></li>
+                            <li><a href="../asi/lienhe.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-an">
+                        <a href="#"><i class="fa-solid fa-cart-shopping fa-2xl" style="color:#1a1a1a;"></i></a>
+                        <div id="hamburger"> <i class="fa-solid fa-bars fa-2xl" style="color:#212020;"></i></div>
+                    </div>
+            </header>
+        <article>
+    <div class="bodywrap">
+        <section class="bread-crumb">
+<div class="container">
+    <ul class="breadcrumb">					
+        <li class="home">
+            <a href="../asi/index.html" id="tc" title="Trang chủ"><span>Trang chủ</span></a>						
+            <span class="mr_lr">&nbsp;
+            <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10">
+                <path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>&nbsp;</span>
+        </li>
+        
+        <li><strong><span><a id="ctv">Về chúng tôi</a></span></strong></li>
+    </ul>
+</div>
+</section> 
+<section class="page">
+<div class="container">
+    <div class="pg_page padding-top-15">
+    <div class="row">
+        <div class="col-12">
+            <div class="page-title category-title">
+                <h1 class="title-head"><a href="/ve-chung-toi" title="Về chúng tôi">Về chúng tôi</a></h1>
+            </div>
+            <div class="content-page rte">
+                <p>Là khách sạn 5 sao đẳng cấp quốc tế, tọa lạc tại giao điểm của bốn quận chính, nơi được xem như trái tim và trung tâm của TP. Hồ Chí Minh.</p>
+<p><img alt="Bean Hotel" src="../img/alper-gio-thieu.jpg"></p>
+<p>Với hệ thống phòng tiêu chuẩn và phòng hạng sang thiết kế đẹp mắt và trang nhã được chú trọng tới từng chi tiết sẽ đem lại sự tiện nghi và thoải mái tối đa cho quý khách dù là thời gian nghỉ ngơi thư giãn hay trong chuyến công tác.&nbsp;</p>
+<p><strong>Bean Hotel&nbsp;</strong>tích hợp đầy đủ tất cả các dịch vụ cho Quý khách có một chuyến công tác hoặc kỳ nghỉ thật sự tiện ích như nhà hàng, phòng hội nghị, hồ bơi, dịch vụ đón tiễn sân bay, các tour du lịch,&nbsp;chơi golf, vé máy bay&nbsp;với chất lượng tốt nhất do những nhân viên chuyên nghiệp của khách sạn đảm nhiệm&nbsp;. Đảm bảo tuyệt đối chất lượng dịch vụ do khách sạn cung cấp là cam kết hàng đầu của chúng tôi.&nbsp;Điều này góp phần tạo nên sự khác biệt của hệ thống Khách sạn <b>Bean Hotel</b>.</p>
+<p>Cùng với đội ngũ nhân viên được tuyển chọn và đào tạo chuyên nghiệp, chu đáo và thân thiện,&nbsp;<b>Bean Hotel&nbsp;</b>hứa hẹn&nbsp;sẽ mang đến cho Quý khách sự thoải mái và hài lòng nhất.</p>
+<p>Đến với&nbsp;<b>Bean Hotel&nbsp;</b>là đến với sư tinh tế nhất&nbsp;về chất lượng, dịch vụ và sự thân thiện như chính ngôi nhà của bạn.</p>
+<p><strong><em>HÃY ĐẾN BEAN&nbsp;</em><em>HOTEL ĐỂ TRẢI NGHIỆM SỰ KHÁC BIỆT!</em></strong></p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+</section>
+    </div>
+</article>
+    <footer>
+        <div class="footer-tab1">
+            <div class="tab1-sup">
+                <h3>hotline hỗ trợ </h3>
+                <p>1900 6750</p>
+            </div>
+            <div class="tab1-email-sup">
+                <h3>email hỗ trợ</h3>
+                <p>support@sapo.vn</p>
+            </div>
+            <div class="tab1-dk">
+                <h3>đăng ký nhận tài khoản </h3>
+                <input class="email" type="email" placeholder="Email của bạn"  >
+                <div class="dangky"><a href="#">ĐĂNG KÝ </a></div>
+            </div>
+            <div class="tab1-connet">
+                <h3>kết nối chúng tôi</h3>
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-tab2">
+            <img width="30" height="23" src="../img/icon-home (1).png" alt="">
+            <h3><a href="#">HỆ THỐNG CHI NHÁNH </a></h3>
+        </div>
+        <div class="footer-tab3">
+          
+                    <div class="table1">
+                       
+                        <div class="icon-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25"><g transform="translate(-377 -4240)"><path d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z" transform="translate(383 4244)" fill="#fff"></path><g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1"><circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle><circle cx="12.5" cy="12.5" r="12" fill="none"></circle></g></g></svg>
+                        </div>
+                        <div class="table-text">
+                        <p>Hotel HCM : 772 Điện Biên Phủ, Phường 1, Bình Thạnh</p>
+                        <p>Hotline: 0982.847.974</p>
+                    </div>
+                    </div>
+                    <div class="table2">
+                    
+                        <div class="icon-inner">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25"><g transform="translate(-377 -4240)"><path d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z" transform="translate(383 4244)" fill="#fff"></path><g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1"><circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle><circle cx="12.5" cy="12.5" r="12" fill="none"></circle></g></g></svg></div>
+                        
+                        <div class="table-text">
+                        <p>Hotel Đà Lạt : 94 Hoàng Hoa Thám, Phường 10 </p>
+                        <p>Hotline: 0263.306.997 </p>
+                        </div>
+                    </div>
+                    
+                        <div class="table3">
+                            <div class="icon-inner">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25"><g transform="translate(-377 -4240)"><path d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z" transform="translate(383 4244)" fill="#fff"></path><g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1"><circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle><circle cx="12.5" cy="12.5" r="12" fill="none"></circle></g></g></svg></div>
+                                <div class="table-text">
+                        <p>Hotel Nha Trang: 02 Phạm Văn Đồng, Phường Vĩnh Phước</p>
+                        <p>Hotline: 0903.307.497 </p>
+                                </div>
+                        </div>
+                        
+
+                        <div class="table4">
+                            <div class="icon-inner">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25"><g transform="translate(-377 -4240)"><path d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z" transform="translate(383 4244)" fill="#fff"></path><g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1"><circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle><circle cx="12.5" cy="12.5" r="12" fill="none"></circle></g></g></svg></div>
+                                <div class="table-text">
+                                <p>Hotel Phú Quốc : 147 Trần Hưng Đạo, Dương Đông</p>
+                        <p>Hotline: 0903.307.447 </p>
+                                </div>
+                        </div>
+
+                        <div class="table5">
+                            <div class="icon-inner">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25"><g transform="translate(-377 -4240)"><path d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z" transform="translate(383 4244)" fill="#fff"></path><g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1"><circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle><circle cx="12.5" cy="12.5" r="12" fill="none"></circle></g></g></svg></div>
+                                <div class="table-text">
+                        <p>Hotel Đăk Lăk : 38 Huỳnh Thúc Kháng, Phường Tân Lợi  </p>
+                        <p>Hotline: 0903.307.448 </p>
+                                </div>
+                        </div>
+
+                        <div class="table6">
+                            <div class="icon-inner">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25"><g transform="translate(-377 -4240)"><path d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z" transform="translate(383 4244)" fill="#fff"></path><g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1"><circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle><circle cx="12.5" cy="12.5" r="12" fill="none"></circle></g></g></svg>
+                                <div class="table-text">
+                        <p>Hotel Hà Nội : 226 Đội Cẩn, Ba Đình </p>
+                        <p>Hotline: 0903.307.449 </p>
+                                </div>
+                        </div>
+           
+        </div>
+
+        </div>
+        <div class="footer-tab4">
+                    <div class="footer-tab4-1">
+                        <div class="logo-foo">
+                            <a href="#" class="logo-footer" title="Bean Hotel"><img width="220" height="68" src="../img/logo_foo.png" alt="Bean Hotel" class="lazyload loaded" data-was-processed="true"></a>
+                        </div>
+                        <div class="content-des">Nằm ở trung tâm thành phố và nhiều thành phố khác. Chúng tôi cung cấp chỗ nghỉ thanh lịch và đầy phong cách với truy cập Wifi miễn phí trong các khu vực chung. Khách sạn có lễ tân 24 giờ, hồ bơi trong nhà, trung tâm thể dục và bãi đỗ xe miễn phí trong khuôn viên.</div>
+                    </div>
+                    <div class="footer-tab4-2">
+                        <h4 class="title-menu clicked">
+                            Bài viết mới
+                        </h4>
+                        <ul class="list-menu toggle-mn hidden-mob">
+                            <li class="item_blog">
+                                <div class="post-info"> 
+                                    <div class="enti-title">
+                                        <a href="#" title="10 xu hướng thịnh hành trong ngành khách sạn 2022">10 xu hướng thịnh hành trong ngành khách sạn 2022</a>
+                                    </div>
+                                    <p class="post-time">Ngày đăng 06/12/2022</p>
+                                </div>
+                            </li>
+                            <li class="item_blog">
+                                <div class="post-info">
+                                    <div class="enti-title">
+                                        <a href="#" title="Những điều kiêng kị khi ở khách sạn mà bạn nên biết">Những điều kiêng kị khi ở khách sạn mà bạn nên biết</a>
+                                    </div>
+                                    <p class="post-time">Ngày đăng 06/12/2022</p>
+                                </div>
+                            </li>
+                            <li class="item_blog">
+                                <div class="post-info">
+                                    <div class="enti-title">
+                                        <a href="#" title="Ý nghĩa việc khách sạn để chocolate lên gối khi dọn phòng">Ý nghĩa việc khách sạn để chocolate lên gối khi dọn phòng</a>
+                                    </div>
+                                    <p class="post-time">Ngày đăng 06/12/2022</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer-tab4-3">
+                        <h4 class="title-menu clicked">
+                            Chính sách 
+                        </h4>
+                        <ul class="list-menu toggle-mn hidden-mob">
+                            
+                            <li class="li_menu">
+                                <a href="#" title="Chính sách nhận phòng">Chính sách nhận phòng</a>
+                            </li>
+                            
+                            <li class="li_menu">
+                                <a href="#" title="Chính sách trả phòng">Chính sách trả phòng</a>
+                            </li>
+                            
+                            <li class="li_menu">
+                                <a href="#" title="Chính sách thanh toán">Chính sách thanh toán</a>
+                            </li>
+                            
+                            <li class="li_menu">
+                                <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-tab4-4">
+                        <h4 class="title-menu">
+                            Hình thức thanh toán 
+                        </h4>
+                        <div class="content-des"><img width="283" height="106" src="../img/icon_check_out (1).png" alt="Hình thức thanh toán"></div>
+                    </div>
+                </div>
+    </footer>
+</div>
+</body>
+</html>

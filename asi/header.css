@@ -1,0 +1,254 @@
+/* thiết kế phần header------------------------------------------------------------------------------------------------------------------ */
+    /* top header */
+    header {
+        background-color: rgb(252, 252, 252);
+    }
+    header .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    width: 100%;
+    margin-right: 45px;
+    margin-left: 45px;
+    }
+    header .row{
+        margin-left: 10px;
+        margin-right: 10px;
+        display:flex;
+        max-height: 30px;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+/* responsive tablet */
+@media (min-width:800px){
+    .row-left{
+        margin-left: -324px;
+    }
+    .row-right{
+        margin-left:-24px;
+    }
+}
+@media (max-width:1230px){
+.row-right{
+    flex:0 0 58.333%;
+    max-width:58.333%;
+}
+@media (max-width:1100px){
+    .row-left .ul6 {
+        display:none;
+        }
+        .row-left  .ul7 , .ul8{
+            display:none;
+        }
+
+         .menu ul li{
+            display:none;
+         }
+}
+}
+    @media (max-width:769px){  
+        .row-right {
+            display: none !important;
+        }
+        .row-left .ul6 {
+        display:none;
+        }
+        .row-left  .ul7 , .ul8{
+            display:none;
+        }
+
+         .menu ul li{
+            display:none;
+         }
+         .main-header {
+           min-height:53px;
+         }
+         .main-header img{
+            margin-top: -29px;
+            margin-left: -40px;
+            max-width: 150px;
+            height:50px;
+         }
+    } 
+/* responsive moblie */
+ @media (max-width:480px){
+    .containerxl {
+        overflow: hidden;
+    }
+    .container{
+        width:100%;
+      overflow: hidden; }  
+
+    .container .top-header .row-right{
+        display:none;
+    }
+      .row-left ul{
+      margin-right: -30px;
+    }  
+     .main-header {
+       min-height:53px;
+     }
+     .main-header img{
+        margin-top: -29px;
+        margin-left: -42px;
+        max-width: 150px;
+        height:50px;
+     }
+} 
+
+     .top-header {
+        padding: 0px 0px;
+        background-color: rgb(205, 154, 43);
+    }
+
+    .row-right {
+         display: flex; 
+         align-items: center; 
+         flex-basis: 100%; 
+         margin-top: 0px;
+    }
+    .row-right p{
+        margin-top:16px;
+        font-size: 14px;
+     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+     color:white; 
+     font-weight: 400;
+    }
+
+    .row-left {
+        flex-basis: 100%;
+        display: flex;
+         justify-content: flex-end;
+        align-items: center; 
+    }
+    .top-header .row-left ul li a:hover{
+       color:rgb(235, 215, 158);
+    }
+    .row-left ul {
+        list-style-type: none;
+align-items: center;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        padding-right: 100px;
+    }
+
+    .row-left>ul>li a {
+        text-decoration: none;
+        padding: 20px;
+        font-size: 14px;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+     color:white;
+     font-weight: 400;
+    } 
+
+    /* main-header */
+     .main-header {
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 45px 0.86fr 4fr 0.125fr 45px;
+       background-color: rgb(255, 255, 255);
+       grid-template-areas: ".a b c .";
+    }
+
+    .main-header img {
+        grid-column: 2/3;
+        max-width: 200px;
+        max-height: 60px;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        padding: 14px;
+        font-size: 15px;
+        color: #222222;
+        font-weight: 600;
+        font-style:initial;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+    .main-header .menu ul li a:hover{
+    color:rgb(205, 154, 43);
+    }
+:root{
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+}  
+
+@media (max-width:471px){
+    header .row {
+        margin-left: -95px;
+        margin-right: -51px;
+        display: flex;
+        max-height: 30px;
+    }
+}
+@media (max-width:370px){
+ .row-left ul li a{
+        display:none;
+    }
+}
+
+    /*kết thúc thiết kế phần header------------------------------------------------------------------------------------------------------------------
+    /*menu ẩn */
+    .menu-responsive ul li a{
+        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+    .menu-an{
+        grid-area: c;
+        grid-column: 7/8;
+        display:flex;
+        display:none;
+    }
+    @media (max-width:1200px){
+       header .menu-an{
+            display:block;
+            display: flex;
+            margin-right:10px;
+        }
+        .fa-cart-shopping{
+            margin-right:10px;
+        }
+    }
+    .menu-responsive{
+        position: absolute;
+        position: fixed;
+        left:0;
+        top:0;
+        background: rgba(0,0,0,0.6);
+        display:flex;
+        flex-wrap: wrap;
+        z-index: 100;
+        width:100vw;
+        height:1000vh;
+        display: none;
+      
+    }
+    .menu-responsive ul{
+        list-style-type: none ;
+    }
+    .menu-responsive ul li a{
+        text-decoration: none;
+        display: block;
+        margin-top: 20px;
+        margin-left: 0px;
+        color:#222222;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .menu-responsive ul li a:hover{
+        color:rgb(205, 154, 43);
+    }
+ .menu-an-1{
+    position: absolute;
+    top:0;
+    background: rgb(255, 255, 255);
+    width: 50%;
+    height:100%;
+ }

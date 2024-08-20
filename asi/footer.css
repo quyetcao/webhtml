@@ -1,0 +1,446 @@
+footer {
+    margin-top: 80px;
+    background-image: url('../img/bg_footer_1.jpg');
+    border: 1px solid rgb(255, 255, 255);
+    background-size: 100%;
+    /* min-height: 930px; */
+}
+@media (max-width:769px){
+
+   footer > .footer-tab1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        flex-direction: row;
+        margin-left: 29px;
+        padding-top: 20px;
+    }
+    footer .footer-tab1 .tab1-connet ul {
+        justify-content: flex-start;
+        margin-left: -68px
+    }
+    footer .footer-tab1 .tab1-connet ul li{
+        padding-left: 30px;
+    }
+    footer  .footer-tab3{
+        margin-left: 10px;
+        width: 768px;
+        display: grid;
+        grid-template-columns:5px 1fr fr 1fr  5px;
+        grid-template-rows: 102px 90px;
+        grid-template-areas: ".table1 table2 table3."
+        ".table4 table5 table6.";
+    }
+    footer .footer-tab3 .table1 .table-text p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    footer .footer-tab3 .table2 .table-text p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    footer .footer-tab3 .table3 .table-text p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    footer .footer-tab3 .table4 .table-text p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    footer .footer-tab3 .table5 .table-text p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    footer .footer-tab3 .table6 .table-text p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+@media (max-width:481px){
+    footer{width: 480px;
+    }
+    footer >.footer-tab1 .tab1-sup{
+        display: none;
+    }
+    footer >.footer-tab1 .tab1-email-sup{
+        display: none;
+    }
+    footer >.footer-tab1 .tab1-dk{
+        display: none;
+    }
+    footer >.footer-tab1 .tab1-connet{
+        display: none;
+    }
+    footer .footer-tab2{
+        display: none;
+    }
+    footer .footer-tab3{
+        display: none;
+    }
+    .container footer .footer-tab4{
+        margin-top: -270px;
+        margin-left: -14px;
+        width:480px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "a"
+        "b"
+        "c"
+        "d";
+    }
+
+    .footer-tab4-1{
+        grid-area: a;
+        margin-top: 20px;
+    }
+    .footer-tab4-2{
+        grid-area: b;
+        margin-top: 260px;
+    }
+    .footer-tab4-3{
+        grid-area: c;
+        margin-top: 500px;
+    }
+    .footer-tab4-4{
+        grid-area: d;
+        margin-top: 700px;
+    }
+}
+.footer-tab1 p:hover{
+    color:rgb(205, 154, 43);
+}
+.footer-tab2 h3 a:hover{
+    color:rgb(205, 154, 43);
+}
+.footer-tab1 {
+    display: flex;
+    justify-content: space-around;
+}
+.tab1-connet ul li {
+    list-style-type: none;
+
+}
+.tab1-connet ul{
+    display:flex;
+    justify-content:space-between;
+    margin-left: -34px;
+}
+
+.tab1-sup h3{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.tab1-sup p{
+    color: #fff;
+    font-size: 15px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.tab1-email-sup p{
+    color: #fff;
+    font-size: 15px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.tab1-email-sup h3{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.tab1-dk h3{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight:600;
+    text-transform: uppercase;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.tab1-connet h3{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.footer-tab2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-tab2 a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    margin-left:10px;
+}
+.footer-tab3{
+    display: grid;
+    grid-template-columns:10px 1fr 1fr 1fr  10px;
+    grid-template-rows: 102px 90px;
+    grid-template-areas: ".table1 table2 table3."
+    ".table4 table5 table6.";
+    margin-left: 43px;
+    padding-top: 27px;
+}
+.table1{
+ grid-area: table1;
+ border-bottom:1px solid rgba(255,255,255,0.15); 
+ border-right: 1px solid rgba(255,255,255,0.15);
+}
+.table-text{
+color:#fcfcfc;
+font-size: 14px;
+font-weight: 600;
+margin-top:-46px;
+padding-left: 51px;
+}
+
+
+.table2{
+    grid-area: table2;
+ border-bottom:1px solid rgba(255,255,255,0.15); 
+ border-right: 1px solid rgba(255,255,255,0.15);
+}
+.table3{
+    grid-area: table3;
+    border-bottom:1px solid rgba(255,255,255,0.15); 
+}
+.table4{
+    grid-area: table4;
+    border-bottom:1px solid rgba(255,255,255,0.15); 
+ border-right: 1px solid rgba(255,255,255,0.15);
+}
+.table5{
+    grid-area: table5;
+    border-bottom:1px solid rgba(255,255,255,0.15); 
+ border-right: 1px solid rgba(255,255,255,0.15);
+}
+.table6{
+    grid-area: table6;
+     border-bottom:1px solid rgba(255,255,255,0.15); 
+}
+.icon-inner{
+    margin-top: 10px;
+    margin-left: 12px;
+}
+
+
+
+
+.footer-tab4{
+    display: grid;
+    grid-template-columns:10px 1fr 1fr 0.5fr 1fr  10px;
+    
+    grid-template-areas: ".footer-tab4-1 footer-tab4-2 footer-tab4-3 footer-tab4-4 ."
+  ;
+    margin-left: 43px;
+    padding-top: 27px;
+    column-gap: 20px;
+    padding-top: 50px;
+}
+@media (max-width:769px){
+    footer .footer-tab4{
+        display: grid;
+        grid-template-columns:10px 384px 384px 10px;
+        grid-template-rows: 250px 200px;
+        grid-template-areas: ".footer-tab4-1 footer-tab4-2."
+        ".footer-tab4-3 footer-tab4-4 ."
+        ;
+        margin-left: 10px;
+    }
+    footer .footer-tab4 .footer-tab4-1 .content-des {
+        font-size: 14px;
+    }
+    .footer-tab4 .footer-tab4-2 .list-menu .item_blog .post-info .enti-title a{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+.footer-tab4-1{ 
+    grid-area: footer-tab4-1; 
+}
+.content-des{
+    font-size: 18px;
+    color: #f5f5f5;
+    line-height: 30px;
+}
+.footer-tab4-2{
+    grid-area: footer-tab4-2;
+}
+.footer-tab4-3{
+    grid-area: footer-tab4-3;
+}
+.footer-tab4-4{
+    grid-area: footer-tab4-4;
+}
+.item_blog{
+    list-style-type: none;
+}
+.title-menu {
+font-size: 15px;
+margin: 10px 0px 15px;
+color: #fff;
+text-transform: uppercase;
+font-weight: 400;
+}
+.list-menu {
+margin-left: -40px;
+}
+.enti-title a{
+text-decoration: none;
+font-size: inherit;
+display: block;
+color: #fff;
+word-wrap: break-word;
+font-weight: 200;
+line-height: 1.4;
+overflow: hidden;
+}
+.post-time{
+color: #c1c1c1;
+font-size: 12px;
+font-style: italic;
+margin-bottom: 0px;
+line-height: 22px;
+}
+.li_menu{
+list-style-type: none;
+line-height: 30px;
+}
+.li_menu a{
+text-decoration: none;
+position: relative;
+color: #fff;
+font-size: 14px;
+font-weight: 200;
+line-height: normal;
+display: block;
+}
+.post-time{
+    border-bottom:1px solid rgba(255,255,255,0.15);  
+}
+.table-text p{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 15px;
+    font-weight: 200;
+}
+.title-menu {
+    font-weight: 500;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";}
+.li_menu a{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 15px;
+    line-height: 35px;
+}
+.content-des{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 200;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.enti-title a:hover{
+color:rgb(205, 154, 43);
+}
+.li_menu a:hover{
+    color:rgb(205, 154, 43);
+    font-weight: 400;
+}
+.email {
+    width:300px;
+    height:28px;
+    border:none;
+}
+.dangky{
+    width:100px;
+    height:30px;
+    background-color: rgb(205, 154, 43);
+    margin-top: -30px;
+    margin-left: 304px;
+}
+.dangky:hover{
+    background-color: rgb(163, 122, 34);
+    transition: ease-in-out 0.5s;
+}
+
+.dangky a{
+    text-decoration: none;
+    font-size: 15px;
+    color:#ffffff;
+    margin-left: 14px;
+    font-weight: 500;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+@media (max-width:1153px){
+   .containerxl footer{
+        margin-top:60px;
+    }
+}
+@media (max-width:766px){
+   footer .footer-tab3{
+        display: none;
+    }
+}
+@media (max-width:745px){
+    footer .footer-tab1{
+     display: none;
+    }
+   footer .footer-tab4{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+}
+@media (max-width:1228px){
+    footer .footer-tab4 {
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: "footer-tab4-1 footer-tab4-2"
+        "footer-tab4-3 footer-tab4-4";
+    }
+}
+::-webkit-scrollbar {
+    display: none;
+}
+@media (max-width:1060px){
+    .footer-tab1{ display: grid;
+    grid-template-columns: 1fr fr ;
+grid-template-rows: 1fr 1fr;
+grid-template-areas: "a1 a2 "
+                    "a3 a4";}
+                    .tab1-sup{
+                        grid-area: a1;
+                    }
+                    .tab1-email-sup{
+                        grid-area: a2;
+                    }
+                    .tab1-dk{
+                        grid-area: a3;
+                    }
+                    .tab1-connet{
+                        grid-area:a4;
+                    }
+
+}
+@media (max-width:480px){
+   .containerxl footer .footer-tab4 {
+    display: grid;
+        grid-template-columns: 1fr  ;
+        grid-template-rows: 0px 0px 0px 0px ;
+        grid-template-areas: "footer-tab4-1"
+        "footer-tab4-2"
+        "footer-tab4-3" "footer-tab4-4";
+    }
+}

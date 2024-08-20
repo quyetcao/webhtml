@@ -1,0 +1,78 @@
+.title-dichvu1:hover{
+        color: rgb(205, 154, 43);
+    }
+    .title-dichvu1{
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    .title-dichvu1::after {
+        border-bottom: 3px double #333;
+        bottom: 10;
+        content: "";
+        width: 110px;
+        height: 42px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+    }
+    .title-dichvu2:hover{
+        color: rgb(205, 154, 43);
+    }
+    .title-dichvu2{
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    .title-dichvu2::after {
+        border-bottom: 3px double #333;
+        bottom: 10;
+        content: "";
+        width: 110px;
+        height: 42px;
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+    }
+    .img-dich-vu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  .img-dich-vu-1{
+    width:calc(25% - 20px);
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+  }
+    
+  .img-dich-vu-1 img{
+    width:100%;
+    border-radius:10px ;
+  }
+  .product-info1{
+    text-overflow:ellipsis;
+  }
+  .product-info1 h3{
+    text-align: center;
+  }
+  .product-info1 h3 a{
+    text-decoration: none;
+    color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+  
+  }
+   .product-info1 h3 a:hover{
+    color: rgb(205, 154, 43);
+   }
+   @media (max-width:768px){
+    .product-info1{
+      text-overflow:ellipsis;
+    }
+   }
+   @media (max-width:670px){
+    .img-dich-vu-1{
+      width:100%;
+      margin-top: 5px;
+    }
+   }

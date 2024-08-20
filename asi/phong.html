@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng</title>
+    <link rel="stylesheet" href="/asignment/css/all.min.css">
+    <link rel="stylesheet" href="../asi/header.css">
+    <link rel="stylesheet" href="../asi/footer.css">
+    <link rel="stylesheet" href="../asi/vechungtoi.css">
+    <link rel="stylesheet" href="../asi/phong.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        padding: 0px;
+        margin: auto;
+    }
+
+    .containerxl {
+        width: 100%;
+        height:auto;
+    } 
+
+</style>
+
+<body>
+    <div class="containerxl">
+        <div class="containerxl">
+            <div class="menu-responsive" id="menu-responsive">
+                <div class="menu-an-1">
+                    <ul>
+                        <li><i class="fa-regular fa-x" id="ff"></i></li>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="../asi/vechungtoi.html">Về chúng tôi</a></li>
+                        <li><a href="../asi/phong.html">Phòng<i class="fa-solid fa-chevron-down"
+                                    style="color: #000000;"></i></a></li>
+                        <li><a href="../asi/AMTHUC.HTML">Ẩm thực<i class="fa-solid fa-chevron-down"
+                                    style="color: #000000;"></i></a></li>
+                        <li><a href="../asi/DICHVU.HTML">Dịch vụ</a></li>
+                        <li><a href="../asi/thuvienanh.html">Thư viện ảnh</a></li>
+                        <li><a href="../asi/lienhe.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <header>
+                <script>
+                    window.onload = function () {
+                        var header = document.getElementById('menu-responsive');
+                        console.log(header);
+                        var hamburger = document.getElementById('hamburger');
+                        var remo = document.getElementById('ff');
+    
+                        remo.onclick = function () {
+                            var remove1 = remo.clientHeight != 0;
+                            if (remove1) {
+                                header.style.display = 'none';
+                            }
+                        }
+                        hamburger.onclick = function () {
+                            // console.log(header.clientHeight);
+                            var isClose = header.clientHeight === 0;
+                            if (isClose) {
+                                header.style.display = 'block';
+                            }
+                            else {
+                                header.style.display = 'none';
+                            }
+                        }
+                    }
+    
+                </script>
+                <div class="top-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="row-right">
+                                <p>Chào mừng bạn đến với Bean Hotel!</p>
+                            </div>
+                            <div class="row-left">
+                                <ul>
+                                    <li class="ul1"><a href="../asi/dangky.html">Đăng Ký</a></li>
+                                    <li class="ul2"><span style="color:#f5f5f5;font-weight: bold;">&nbsp|&nbsp</span></li>
+                                    <li class="ul3"><a href="../asi/dangnhap.html">Đăng Nhập</a></li>
+                                    <li class="ul4"><span style="color:#f5f5f5;font-weight: bold;">&nbsp|&nbsp</span></li>
+                                    <li class="ul5"><span>&nbsp</span></li>
+                                    <li class="ul6"><span>&nbsp</span></li>
+                                    <li class="ul7"><a href="#"><i class="fa-solid fa-cart-shopping fa-fm"
+                                                style="color: #f5f5f5; padding:5px;"></i>Giỏ hàng (0)</a></li>
+                                    <li class="ul8"><span style="color:#f5f5f5;font-weight: bold;">&nbsp|&nbsp</span></li>
+                                    <li class="ul9"><a href="#"><i class="fa-solid fa-magnifying-glass fa-fm"
+                                                style="color: #fcfcfc; padding:5px;"></i>Tìm Kiếm </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-header">
+                    <img src="../img/logo (1).png" alt="Logo" />
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="../asi/vechungtoi.html">Về chúng tôi</a></li>
+                            <li><a href="../asi/phong.html">Phòng<i class="fa-solid fa-chevron-down"
+                                        style="color: #000000;"></i></a></li>
+                            <li><a href="../asi/AMTHUC.HTML">Ẩm thực<i class="fa-solid fa-chevron-down"
+                                        style="color: #000000;"></i></a></li>
+                            <li><a href="../asi/DICHVU.HTML">Dịch vụ</a></li>
+                            <li><a href="../asi/thuvienanh.html">Thư viện ảnh</a></li>
+                            <li><a href="../asi/lienhe.html">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-an">
+                        <a href="#"><i class="fa-solid fa-cart-shopping fa-2xl" style="color:#1a1a1a;"></i></a>
+                        <div id="hamburger"> <i class="fa-solid fa-bars fa-2xl" style="color:#212020;"></i></div>
+                    </div>
+            </header>
+        <article>
+            <section class="bread-crumb">
+                <div class="container">
+                    <ul class="breadcrumb">					
+                        <li class="home">
+                            <a href="../asi/index.html" id="tc" title="Trang chủ"><span>Trang chủ</span></a>						
+                            <span class="mr_lr">&nbsp;
+                            <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" class="svg-inline--fa fa-chevron-right fa-w-10">
+                                <path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" class=""></path></svg>&nbsp;</span>
+                        </li>
+                        
+                        <li><strong><span><a id="ctv">Phòng</a></span></strong></li>
+                    </ul>
+                </div>
+                </section> 
+                <div class="bodywrap">
+                    <h1>PHÒNG</h1>
+                 <div class="row">
+                <div class="section-room">
+                    <div class="container">
+                    <div class="container-room ">
+                        <div class="hi">
+                        <img src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/anh1.jpg?v=1670338577307"
+                            alt="">
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐƠN TIÊU CHUẨN </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>02 khách</li>
+                                    <li>20m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom 2">
+                            <h5>500.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room">
+                        <div class="title-img">
+                            <div class="hi">
+                            <img src="https://bizweb.dktcdn.net/thumb/large/100/472/947/products/sp21.jpg?v=1670338576510"
+                                alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐƠN VIEW THÀNH PHỐ </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>02 khách</li>
+                                    <li>25m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>700.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room ">
+                        <div class="title-img">
+                            <div class="hi">
+                            <img src="//bizweb.dktcdn.net/thumb/large/100/472/947/products/anh11a713f0cbaa54ea595b6bb5e1b.jpg?v=1670338575473"
+                                alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐƠN VIEW SÂN VƯỜN </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>02 khách</li>
+                                    <li>25m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>800.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room ">
+                        <div class="title-img">
+                            <div class="hi">
+                            <img src="//bizweb.dktcdn.net/thumb/large/100/472/947/products/anh1eb6eb86adb63474a819ab595ee.jpg?v=1670338574237"
+                                alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐƠN VIEW BIỂN </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>02 khách</li>
+                                    <li>25m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>900.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room">
+                        <div class="hi">
+                        <img src="../img/anh12082233010354fb2894f5b1193.jpg" alt="">
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐÔI TIÊU CHUẨN </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="../img/tag_icon_3.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>02 khách</li>
+                                    <li>20m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>950.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room">
+                        <div class="title-img">
+                            <div class="hi">
+                            <img src="../img/anh11ccbd4ad859c41ff9fda9cdd73.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐÔI VIEW THÀNH PHỐ </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="../img/tag_icon_3.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>02 khách</li>
+                                    <li>20m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>1.100.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room">
+                        <div class="title-img">
+                            <div class="hi">
+                            <img src="../img/anh1120e24401b1a4fb7b5535ae97a.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐÔI VIEW SÂN VƯỜN </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="../img/tag_icon_3.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>02 khách</li>
+                                    <li>30m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>1.200.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room">
+                        <div class="title-img">
+                            <div class="hi">
+                            <img src="../img/anh11ccbd4ad859c41ff9fda9cdd73.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐÔI 2 GIƯỜNG ĐÔI </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="../img/tag_icon_3.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>04 khách</li>
+                                    <li>32m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>1.500.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room">
+                        <div class="title-img">
+                            <div class="hi">
+                            <img src="../img/anh11ccbd4ad859c41ff9fda9cdd73.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG ĐƠN VIP </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="../img/tag_icon_3.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>04 khách</li>
+                                    <li>32m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>1.500.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room">
+                        <div class="title-img">
+                            <div class="hi">
+                            <img src="../img/phonggiaddinh.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG GIA ĐÌNH  </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="../img/tag_icon_3.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>04 khách</li>
+                                    <li>32m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>1.500.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room">
+                        <div class="title-img">
+                            <div class="hi">
+                            <img src="../img/phòng tp.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>CĂN HỘ CHUNG CƯ </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="../img/tag_icon_3.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>04 khách</li>
+                                    <li>32m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>1.500.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                    <div class="container-room">
+                        <div class="title-img">
+                            <div class="hi">
+                            <img src="../img/canhocaocap.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="content-room-top">
+                            <h4>PHÒNG HẠNG SANG </h4>
+                            <div class="icon-room">
+                                <ul>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_1.svg?1676011628150"
+                                            alt="Cafe"></li>
+                                    <li><img src="../img/tag_icon_2.svg" alt=""></li>
+                                    <li><img src="../img/tag_icon_3.svg" alt=""></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_4.svg?1676011628150"
+                                            alt="Bồn tắm"></li>
+                                    <li><img src="//bizweb.dktcdn.net/100/472/947/themes/888072/assets/tag_icon_5.svg?1676011628150"
+                                            al="wifi"></li>
+                                </ul>
+                            </div>
+                            <div class="tag-review">
+                                <ul class="list-tag-review">
+                                    <li>04 khách</li>
+                                    <li>32m²</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content-room-bottom">
+                            <h5>1.500.000đ/đêm</h5>
+                            <div class="oder-room"><a href="#">ĐẶT PHÒNG</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--hết Phòng đôi -->
+                <div class="chuyendoi">
+		
+                    <nav class="collection-paginate clearfix relative nav_pagi w_100">
+                <ul class="pagination clearfix">
+                      
+                    <li class="page-item disabled"><a class="page-link" href="#">«</a></li>
+                    
+                    
+                    
+                    
+                    
+                    <li class="active page-item disabled"><a class="page-link" href="" style="pointer-events:none">1</a></li>
+                    
+                    
+                    
+                    
+                    <li class="page-item"><a class="page-link" href="">2</a></li>
+                    
+                                    
+                    
+                    <li class="page-item"><a class="page-link link-next-pre"  href="" title="2">»</a></li>
+                         
+                </ul>
+            </nav>
+                    
+                </div>
+                </div>
+                </div>
+
+        </article>
+        <footer>
+            <div class="footer-tab1">
+                <div class="tab1-sup">
+                    <h3>hotline hỗ trợ </h3>
+                    <p>1900 6750</p>
+                </div>
+                <div class="tab1-email-sup">
+                    <h3>email hỗ trợ</h3>
+                    <p>support@sapo.vn</p>
+                </div>
+                <div class="tab1-dk">
+                    <h3>đăng ký nhận tài khoản </h3>
+                    <input class="email" type="email" placeholder="Email của bạn"  >
+                    <div class="dangky"><a href="#">ĐĂNG KÝ </a></div>
+                </div>
+                <div class="tab1-connet">
+                    <h3>kết nối chúng tôi</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-twitter"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-tab2">
+                <img width="30" height="23" src="../img/icon-home (1).png" alt="">
+                <h3><a href="#">HỆ THỐNG CHI NHÁNH </a></h3>
+            </div>
+            <div class="footer-tab3">
+              
+                        <div class="table1">
+                           
+                            <div class="icon-inner">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25"><g transform="translate(-377 -4240)"><path d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z" transform="translate(383 4244)" fill="#fff"></path><g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1"><circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle><circle cx="12.5" cy="12.5" r="12" fill="none"></circle></g></g></svg>
+                            </div>
+                            <div class="table-text">
+                            <p>Hotel HCM : 772 Điện Biên Phủ, Phường 1, Bình Thạnh</p>
+                            <p>Hotline: 0982.847.974</p>
+                        </div>
+                        </div>
+                        <div class="table2">
+                        
+                            <div class="icon-inner">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25"><g transform="translate(-377 -4240)"><path d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z" transform="translate(383 4244)" fill="#fff"></path><g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1"><circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle><circle cx="12.5" cy="12.5" r="12" fill="none"></circle></g></g></svg></div>
+                            
+                            <div class="table-text">
+                            <p>Hotel Đà Lạt : 94 Hoàng Hoa Thám, Phường 10 </p>
+                            <p>Hotline: 0263.306.997 </p>
+                            </div>
+                        </div>
+                        
+                            <div class="table3">
+                                <div class="icon-inner">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25"><g transform="translate(-377 -4240)"><path d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z" transform="translate(383 4244)" fill="#fff"></path><g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1"><circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle><circle cx="12.5" cy="12.5" r="12" fill="none"></circle></g></g></svg></div>
+                                    <div class="table-text">
+                            <p>Hotel Nha Trang: 02 Phạm Văn Đồng, Phường Vĩnh Phước</p>
+                            <p>Hotline: 0903.307.497 </p>
+                                    </div>
+                            </div>
+                            
+
+                            <div class="table4">
+                                <div class="icon-inner">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25"><g transform="translate(-377 -4240)"><path d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z" transform="translate(383 4244)" fill="#fff"></path><g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1"><circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle><circle cx="12.5" cy="12.5" r="12" fill="none"></circle></g></g></svg></div>
+                                    <div class="table-text">
+                                    <p>Hotel Phú Quốc : 147 Trần Hưng Đạo, Dương Đông</p>
+                            <p>Hotline: 0903.307.447 </p>
+                                    </div>
+                            </div>
+
+                            <div class="table5">
+                                <div class="icon-inner">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25"><g transform="translate(-377 -4240)"><path d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z" transform="translate(383 4244)" fill="#fff"></path><g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1"><circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle><circle cx="12.5" cy="12.5" r="12" fill="none"></circle></g></g></svg></div>
+                                    <div class="table-text">
+                            <p>Hotel Đăk Lăk : 38 Huỳnh Thúc Kháng, Phường Tân Lợi  </p>
+                            <p>Hotline: 0903.307.448 </p>
+                                    </div>
+                            </div>
+
+                            <div class="table6">
+                                <div class="icon-inner">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 25 25"><g transform="translate(-377 -4240)"><path d="M5.411,15.759C.847,9.142,0,8.463,0,6.031a6.031,6.031,0,1,1,12.062,0c0,2.432-.847,3.111-5.411,9.727a.754.754,0,0,1-1.24,0Zm.62-7.214A2.513,2.513,0,1,0,3.518,6.031,2.513,2.513,0,0,0,6.031,8.544Z" transform="translate(383 4244)" fill="#fff"></path><g transform="translate(377 4240)" fill="none" stroke="#fff" stroke-width="1"><circle cx="12.5" cy="12.5" r="12.5" stroke="none"></circle><circle cx="12.5" cy="12.5" r="12" fill="none"></circle></g></g></svg>
+                                    <div class="table-text">
+                            <p>Hotel Hà Nội : 226 Đội Cẩn, Ba Đình </p>
+                            <p>Hotline: 0903.307.449 </p>
+                                    </div>
+                            </div>
+               
+            </div>
+
+            </div>
+            <div class="footer-tab4">
+                        <div class="footer-tab4-1">
+                            <div class="logo-foo">
+                                <a href="#" class="logo-footer" title="Bean Hotel"><img width="220" height="68" src="../img/logo_foo.png" alt="Bean Hotel" class="lazyload loaded" data-was-processed="true"></a>
+                            </div>
+                            <div class="content-des">Nằm ở trung tâm thành phố và nhiều thành phố khác. Chúng tôi cung cấp chỗ nghỉ thanh lịch và đầy phong cách với truy cập Wifi miễn phí trong các khu vực chung. Khách sạn có lễ tân 24 giờ, hồ bơi trong nhà, trung tâm thể dục và bãi đỗ xe miễn phí trong khuôn viên.</div>
+                        </div>
+                        <div class="footer-tab4-2">
+                            <h4 class="title-menu clicked">
+                                Bài viết mới
+                            </h4>
+                            <ul class="list-menu toggle-mn hidden-mob">
+                                <li class="item_blog">
+                                    <div class="post-info"> 
+                                        <div class="enti-title">
+                                            <a href="#" title="10 xu hướng thịnh hành trong ngành khách sạn 2022">10 xu hướng thịnh hành trong ngành khách sạn 2022</a>
+                                        </div>
+                                        <p class="post-time">Ngày đăng 06/12/2022</p>
+                                    </div>
+                                </li>
+                                <li class="item_blog">
+                                    <div class="post-info">
+                                        <div class="enti-title">
+                                            <a href="#" title="Những điều kiêng kị khi ở khách sạn mà bạn nên biết">Những điều kiêng kị khi ở khách sạn mà bạn nên biết</a>
+                                        </div>
+                                        <p class="post-time">Ngày đăng 06/12/2022</p>
+                                    </div>
+                                </li>
+                                <li class="item_blog">
+                                    <div class="post-info">
+                                        <div class="enti-title">
+                                            <a href="#" title="Ý nghĩa việc khách sạn để chocolate lên gối khi dọn phòng">Ý nghĩa việc khách sạn để chocolate lên gối khi dọn phòng</a>
+                                        </div>
+                                        <p class="post-time">Ngày đăng 06/12/2022</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <div class="footer-tab4-3">
+                            <h4 class="title-menu clicked">
+                                Chính sách 
+                            </h4>
+                            <ul class="list-menu toggle-mn hidden-mob">
+                                
+                                <li class="li_menu">
+                                    <a href="#" title="Chính sách nhận phòng">Chính sách nhận phòng</a>
+                                </li>
+                                
+                                <li class="li_menu">
+                                    <a href="#" title="Chính sách trả phòng">Chính sách trả phòng</a>
+                                </li>
+                                
+                                <li class="li_menu">
+                                    <a href="#" title="Chính sách thanh toán">Chính sách thanh toán</a>
+                                </li>
+                                
+                                <li class="li_menu">
+                                    <a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="footer-tab4-4">
+                            <h4 class="title-menu">
+                                Hình thức thanh toán 
+                            </h4>
+                            <div class="content-des"><img width="283" height="106" src="../img/icon_check_out (1).png" alt="Hình thức thanh toán"></div>
+                        </div>
+                    </div>
+        </footer>
+    </div>
+</body>
+
+</html>
